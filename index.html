@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        button {
+            height: 80px;
+            font-size: 30px;
+        }
+        img {
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <img id="cat1" src="assets/images/img1.jpg" alt="cats1" > 
+   <br>
+    <button onclick="turnBack()">Назад</button>
+    <button onclick="turnForward()">Вперед</button>
+<script>
+    function turnBack() {
+        let imageCat= document.getElementById('cat1');
+        imageCat.src="assets/images/img2.jpg";
+    }
+    function turnForward() {
+        let imageCat= document.getElementById('cat1');
+        imageCat.src="assets/images/img3.jpg";
+    }
+</script>  
+
+</body>
+
+</html>
